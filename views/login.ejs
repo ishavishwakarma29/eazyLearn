@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="/css/login.css">
+  <body>
+    <div class="imgleft">
+      <img class="img1" src="images/Screenshot (64).png" alt="" />
+    </div class="allother">
+
+    <div class="right">
+      <div class="Heading1"><h1>Login To Your Account</h1></div>
+      <div class="Heading2">
+        <h4>Please enter the org code and your mobile number to continue</h4>
+      </div>
+
+
+      <div class="form">
+        <form method="post" action="/">
+            <div class="form-group">
+              <label for="exampleInputEmail1"><h5>Email</h5></label>
+              <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><h5>Password</h5></label>
+              <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+              <input type="checkbox" id="showPassword" />
+              <label for="showPassword"><h6>Show password</h6></label>
+            </div>
+            <div class="errorMsg">
+              <%= errorMsg %>
+            </div>
+            <button type="submit" class="btn btn-primary" id="IDBtn">Login</button>
+          </form>
+      </div>
+
+    </div>
+    <script src="/javascripts/login.js"></script>
+  </body>
+</html>

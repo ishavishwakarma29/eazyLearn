@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+        <h3>TEAMS</h3>
+        <hr>
+        <div class="list">
+            <div class="subject">
+                <h2>Physics</h2>
+                <form class="" action="/<%= name %>/teams/Physics" method="get">
+                  <button class="team" type="submit" style="background-color:  rgb(231, 236, 251);">P</button>
+                </form>
+            </div>
+            <div class="subject">
+                <h2>Chemistry</h2>
+                <form class="" action="/<%= name %>/teams/Chemistry" method="get">
+                  <button class="team" type="submit" style="background-color: rgb(212, 246, 199);">C</button>
+                </form>
+            </div>
+            <div class="subject">
+                <h2>Maths</h2>
+                <form class="" action="/<%= name %>/teams/Maths" method="get">
+                    <button type="submit" class="team" style="background-color: rgb(246, 218, 237);">M</button>
+                </form>
+            </div>
+        </div>
+<%- include("partials/footer") -%>

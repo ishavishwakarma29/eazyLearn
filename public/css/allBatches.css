@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+hr
+{
+    width: 80%;
+    height: 1px;
+    border: none;
+    background-color:darkgray
+}
+
+h3
+{
+    color: black;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.list
+{
+    display: block;
+}
+.subject
+{
+    display: inline-block;
+    width: 256px;
+    height: 180px;
+    margin: 2% 0 2% 5%;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #848d97;
+    -webkit-box-shadow: 0 0 10px #dededf;
+    box-shadow: 0 0 10px #dededf;
+}
+
+.team
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 256px;
+    height: 100px;
+    border: #848d97;
+    border-radius: 1mm;
+    cursor: pointer;
+}

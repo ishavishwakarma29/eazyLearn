@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h5,h6
+{
+  font-family: 'Nunito', sans-serif;
+  margin-top: 5vh;
+}
+
+.form-control
+{
+  width: 40%;
+}
+.imgleft{
+    display: flex;
+    float: left;
+}
+
+.img1{
+    width: 40vw;
+}
+
+.right{
+    float: right;
+    width: 55vw;
+}
+.Heading1{
+    margin-top: 10vh;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: bold;
+}
+
+.Heading2{
+    margin-top: 2vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn{
+    margin-top: 2vh;
+}
+
+.errorMsg{
+    color: red;
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 567px) {
+   .imgleft{width:100vw}
+   .img1{width:100vw}
+   .right{float:left ; margin-left: 25vw;}
+  }

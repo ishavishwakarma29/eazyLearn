@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+h3,h4
+{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+.sidebar
+{
+    display: block;
+    border: 1px solid transparent;
+    box-shadow: 2px 0 5px -2px #848d97;
+    width: 15vw;
+    min-width: fit-content;
+    padding-bottom: 290px;
+}
+
+.sidebar-item
+{
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: black;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.block
+{
+    float: right;
+    display: block;
+}
+.sub-block
+{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px;
+    width: 60vw;
+    height: 35vh;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #dededf;
+    box-shadow: 0 0 10px #dededf;
+}
+
+.week
+{
+    display: block;
+}
+
+.days
+{
+    margin-right: 5vw;
+    display: inline-block;
+}
+.cont
+{
+    display: block;
+}
+.contain
+{
+    margin: 50px;
+    display: inline-block;
+}
+
+.class
+{
+    margin-top: 40px;
+    margin-left: 50px;
+}

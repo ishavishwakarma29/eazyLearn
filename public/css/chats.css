@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+}
+
+.left{
+    float: left;
+    margin-left: 10vw;
+    background-color: white;
+    height: 100vh;
+    width: 30vw;
+}
+
+.right{
+    float: right;
+    margin-right: 2vw;
+    background-color: white;
+    height: 100vh;
+    width: 50vw;
+}
+
+.writechat{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    background-color: white;
+    box-shadow: 10px;
+    width: 30vw;
+    height: 7vh;
+    font-size: 3vh;
+}
+
+.search1{
+    padding: 10px;
+    width: 28.5vw;
+    background-color: white;
+    color: black;
+    margin: 1.5vh;
+}
+
+.writemessage{
+    background-color: white;
+    color: black;
+    height: 5vh;
+    margin: 2vh 1.5vw 0 1vw;
+    margin-bottom: 2vh;
+}
+
+.messages{
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.messageblock{
+    width: 30vw;
+    padding: 2px;
+    background-color: white;
+    color: black;
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+
+.profile{
+    float: left;
+    height: 8vh;
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 3.75vw;
+    color: white;
+    background-color:gray;
+    border-radius: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.other{
+    display: inline;
+    float: right;
+    width: 25vw;
+    height: 100%;
+    background-color:white;
+}
+
+.name{
+    padding: 5px 5px 1px 5px;
+    font-weight: 300;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.message{
+    padding-left: 5px;
+    background-color: white;
+    color: black;
+    height: 4vh;
+    overflow-y: hidden;
+}
+
+.imgf{
+    margin-left:23vw;
+    margin-top: 45vh;
+    background-color: white;
+}
+
+.text{
+    margin-left: 17vw;
+    margin-top:10px;
+    background-color: white;
+    color: black;
+    font-size:20px;
+}
