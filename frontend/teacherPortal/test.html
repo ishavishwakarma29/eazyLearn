@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css" />
+  </head>
+  <body>
+    <div class="test-wrapper">
+      <div class="test-cont">
+        <form class="test-form" action="/xyz" method="post">
+          <label class="testNameLabel" for="">Enter test name :</label>
+          <input class="testName" type="text">
+          <p class="test-dur">Enter Duration :
+          <select name="" id="hours" class="decorated">
+            <option value="" disabled selected>hrs</option>
+          </select>
+          <select name="" id="minutes" class="decorated">
+            <option value="" disabled selected>min</option>
+          </select>
+          <select name="" id="seconds" class="decorated">
+            <option value="" disabled selected>sec</option>
+          </select>
+          </p>
+          <div class="ques-cont" id="add_to_me">
+            <textarea class="que" type="text" name="que1"> Question 1 </textarea>
+              <div class="options-cont">
+              <p>1.<input class="option" type="text" placeholder="option 1"/></p>
+              <p>2.<input class="option" type="text" placeholder="option 2"/></p>
+              <p>3.<input class="option" type="text" placeholder="option 3"/></p>
+              <p>4.<input class="option" type="text" placeholder="option 4"/></p> 
+              </div>
+              <p class="correctLbl">Select correct option:
+                <select name="" id="" class="correct">
+                  <option value="" selected>1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </p>
+          </div>
+          <button type="submit" onclick="addCode()" class="add-question">
+            Add question
+          </button>
+          <hr />
+          <button type="submit" class="btn-submit">Create Test</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

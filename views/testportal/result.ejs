@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Result</title>
+    <link rel="stylesheet" href="css/aman/tr.css">
+</head>
+<body>
+    <div class="grid">
+
+        
+        <div class="infosection">
+            <div class="leftinfo">
+              <div class="profile"><span class="initials">IA</span></div>
+              <span class="otherinfo">Name :<span class="bgwhite"> Isha Vishwakarma</span></span>
+            </div>
+            <div class="language">English</div>
+            <span class="otherinfo1">Exam Name :<span class="bgwhite"> JEE Advanced</span></span>
+            <span class="otherinfo1">Subject Name :<span class="bgwhite"> Chemistry</span></span>
+            <span class="otherinfo1">Total Marks :<span class="bgwhite"> 300</span></span>
+        </div>
+        
+
+        <div class="thankyou">
+            Thank You !! You Submitted your test Successfully.
+        </div>
+        
+        <div class="scorecard">
+            <div class="text1">Score Card</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable"><%=total%></th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable"><%=tattempted%></th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable"><%=correctanswer%></th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable"><%=incorrect%></th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable"><%=getmarks%></th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable"><%=accuracy%>%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <div class="physics">
+            <div class="text1">Physics Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">1</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">0</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">1</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">-1</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chemistry">
+            <div class="text1">Chemistry Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">2</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">2</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">8</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">100%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="maths">
+            <div class="text1">Maths Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">2</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">2</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">8</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">100%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+        <div class="review">
+            <div class="text2">Review</div>
+            <div class="reviewcontent">
+                You Have to understand the importance of perfoming in all the subjects with approximately same accuracy. This will surely help you to accompplish your dreams. Also, you should pratice medium and tough level question so that you can attempt more questions. 
+                <div class="grade"> Grade : C</div>
+            </div>
+        </div>
+
+        <div class="downloadpdf">
+            <form id="formpdfdwnld" action="https://drive.google.com/file/d/1pOQb4uPdEE7C9zd8Ar7vVSC5zeSPHVjI/view?usp=sharing">
+                <input type="submit" value="View And Download the Answer along with Solution of your Test." id="btnpdfdwnld" style="cursor: pointer; float: right; padding: 10px; font-size: 15px; font-weight: 700; margin-right: 15px; background-color: slateblue; color: whitesmoke;"/>
+            </form>
+            
+        </div>
+
+    </div>
+</body>
+</html>

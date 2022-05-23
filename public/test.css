@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-color: #a683e3;
+}
+
+.test-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.test-cont {
+  padding: 30px;
+  width: 70vw;
+  min-height: 100vh;
+  height: fit-content;
+  background-color: #e4e9fd;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.test-form {
+  width: 80%;
+}
+
+label {
+  float: left;
+  margin-left: 10%;
+}
+
+.test-dur {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2b0669;
+}
+
+.decorated
+{
+  color: #a683e3;
+  margin-left: 30px;
+  height: 2rem;
+}
+
+.option {
+  margin-left: 2%;
+  width: 98%;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #a683e3;
+}
+
+.box
+{
+  margin-right: 10px;
+}
+
+.option::placeholder
+{
+  color: #a683e3;
+}
+
+.testName {
+  font-size: 2.5rem;
+  color: #a683e3;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #a683e3;
+}
+
+.testNameLabel
+{
+  margin: 0%;
+  font-size: 2.5rem;
+  color: #2b0669;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ques-cont {
+  margin: 15px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.que {
+  border: 1px solid #a683e3;
+  color: #a683e3;
+  font-size: 18px;
+  width: 100%;
+}
+
+.options-cont {
+  margin: 15px 0;
+}
+
+input {
+  width: 100%;
+}
+
+.correct
+{
+  margin-left: 30px;
+  color: #a683e3;
+}
+
+.correctLbl
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2b0669;
+}
+
+.add-question {
+  border-radius: 2mm;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0px 2px 15px #61459182;
+  background-color: #a683e3;
+  width: 30%;
+  height: 35px;
+  margin: 20px 0;
+  margin-left: 3px;
+}
+
+.add-question:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 3px 15px #61459182;
+}
+
+.btn-submit {
+  width: 30%;
+  height: 35px;
+  display: block;
+  border-radius: 2mm;
+  border: 0;
+  background-color: greenyellow;
+  box-shadow: 0px 2px 5px rgb(139, 194, 57);
+  color: rgb(6, 66, 2);
+  font-size: 18px;
+  font-weight: 600;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.btn-submit:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 2px 5px rgb(74, 107, 24);
+}

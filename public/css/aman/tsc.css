@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 2.0fr 0.9fr;
+}
+
+.infosection{
+    background-color: white;
+    width: 60vw;
+    height: 20vh;
+    margin-left: 18vw;
+}
+
+.leftinfo{
+    background-color: white;
+}
+
+.profile{
+    float: left;
+    background-color: palevioletred;
+    height: 12vh;
+    width: 6vw;
+    border-radius: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.initials{
+    float: left;
+    font-size: 25px;
+    background-color: palevioletred;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left:33px;
+    font-weight: 300;
+}
+
+.bgwhite{
+    background-color: white;
+}
+.otherinfo{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 40vw;
+}
+.otherinfo1{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 40vw;
+}
+
+.language{
+    float: right;
+    background-color: white;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.second{
+    margin-top: 5px;
+}
+
+.examsummary{
+    background-color: white;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 26px;
+    font-weight: 500;
+    width: 60vw;
+    margin-left: 18vw;
+}
+
+.table{
+    width: 60vw;
+    margin-left: 18vw;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    background-color: white;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #393a39;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.third{
+    width: 60vw;
+    margin-left: 18vw;
+    background-color: white;
+}
+
+.statement{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.statementcontinue{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.buttons{
+    background-color: white;
+}
+
+.YesButton{
+    margin: 20px 20px 0 25vw;
+    font-size: 15px;
+    padding: 8px;
+    width: 55px;
+    background-color: white;
+    cursor: pointer;
+}
+.NoButton{
+    margin: 20px 20px 0 5px;
+    font-size: 15px;
+    padding: 8px;
+    width: 55px;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Batches</title>
+    <script src="https://kit.fontawesome.com/2121515fbf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/isha/assignmentsubmit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Container">
+                <div class="Nav-item">
+                    <a href="">Batches</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Time Table</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Reports</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Chat</a>
+                </div>
+                <div class="Nav-item logo">
+                    <button class="dropbtn" href=""><span class="icon">s</span>sambhav</button>
+                </div>
+            </div>
+        </nav>
+        <div id="myP">
+            <ul>
+                <li>
+                    Profile
+                </li>
+                <li>
+                    logout
+                </li>
+            </ul>
+        </div>
+    </header>
+<div class="main">
+    <div class="sidebar sqr1">
+        <div class="sidebar-item"><i class="fa-solid fa-list"></i>   Overview</div>
+        <div class="sidebar-item"><i class="fa-solid fa-clipboard-user"></i>   attendance</div>
+        <div class="sidebar-item"><i class="fa-solid fa-pen"></i>   assignments</div>
+        <div class="sidebar-item"><i class="fa-solid fa-bell"></i>   announcements</li></div>
+        <div class="sidebar-item"><i class="fa-solid fa-file"></i>   tests</div>
+        <div class="sidebar-item"><i class="fa-solid fa-book"></i>   study material</div>
+    </div>
+    <div class="sub-block sqr2">
+        <h1><%=data.assignment_name%></h1>
+        <hr>
+        <h1><span class="info"><%=subject%></span><h1>
+        <h2><span>Due date: <span class="info"><%=data.dueDate%></span></span><span class="due_time">Due time: <span class="info"><%=data.dueTime%></span></span></h2>
+        <h2>Instructions :</h2>
+        <h4><span class="info instruct"><%=data.instructions%></span></h4>
+        <h2>Assignment file:</h2>
+        <button class="download"><a href="/woc.zip" download>Download</a></button>
+          </a>
+        <h2>Add your work :</h2>
+        <form action="" method="post">
+            <input type="file">
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+   
+</div >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assignmentStudent.js"></script>
+</body>
+</html>

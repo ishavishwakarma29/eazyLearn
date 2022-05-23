@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sam/testinfo.css">
+</head>
+
+<body>
+    <div class="container">
+        <% render.forEach(function(item){ %>
+        <div class="box">
+            <input type="text" value="<%=item.question%>" name="question" required class="form-control data question preview"
+                autocomplete="off">
+            <input type="text" value="<%=item.options[0]%>" name="opt1" required class="form-control data" autocomplete="off">
+            <input type="text" value="<%=item.options[1]%>" name="opt2" required class="form-control data" autocomplete="off">
+            <input type="text" value="<%=item.options[0]%>" name="opt3" required class="form-control data" autocomplete="off">
+            <input type="text" value="<%=item.options[0]%>" name="opt4" required class="form-control data" autocomplete="off">
+            <input type="text" value="<%=item.correct%>" name="correct_option" required class="form-control data"
+                autocomplete="off" >
+        </div>
+        <% }); %>
+    </div>
+</body>
+
+</html>

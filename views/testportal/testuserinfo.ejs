@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sam/testuserinfo.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="container">
+            <p>Test Id : <span><%=data.test_id%></span></p>
+            <p>Subject : <span><%=tsub%></span></p>
+            <p>Topic : <span><%=data.test_name%></span></p>
+            <p>Time : <span><%=data.time%> minutes</span></p>
+            <p>Total Marks : <span><%=data.total_marks%></span></p>
+            <p>User : <span><%=user%></span></p>
+            <form action="/testplatform/starttest/<%=data.test_id%>">
+                <input type="submit"  value="Start Test" class="btn">
+            </form>
+        </div>
+        <div class="aside">
+            <img src="images/testuserinfo.jpg" alt="" class="image">
+        </div>
+    </div>
+</body>
+
+</html>

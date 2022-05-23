@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.container .login{
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .login .box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box #login-heading{
+    margin: 10px auto;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.box #social-media-paragrah{
+    margin: 10px auto;
+    font-size: 20px;
+    color: gray;
+}
+
+.box .media-buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box a{
+    margin: 3%;
+}
+
+.box .hr{
+    height: 2px;
+    width: 90%;
+    background-color: rgb(39,179,151);
+    margin: 20px auto;
+
+}
+
+.box .input{
+    display: block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    width: 80%;
+    background-color: rgb(221, 243, 238);
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+
+
+.box .btn{
+    display: block;
+    margin: 30px auto;
+    width: 30%;
+    background-color: rgb(39,179,151);
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.container .aside{
+    background-color: rgb(39,179,151);
+    height: 100vh;
+    display: flex;
+}
+
+.aside-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.aside-box{
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    
+}
+

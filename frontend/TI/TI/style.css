@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.content{
+    
+}
+.infosection{
+    background-color: white;
+    width: 60vw;
+    height: 20vh;
+    margin-left: 8vw;
+}
+
+.leftinfo{
+    background-color: white;
+}
+
+.profile{
+    float: left;
+    background-color: palevioletred;
+    height: 12vh;
+    width: 6vw;
+    border-radius: 100%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.initials{
+    float: left;
+    font-size: 25px;
+    background-color: palevioletred;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-left:33px;
+    font-weight: 300;
+}
+
+.bgwhite{
+    background-color: white;
+}
+.otherinfo{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 40vw;
+}
+.otherinfo1{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 40vw;
+}
+
+.language{
+    float: right;
+    background-color: white;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.questionandoptions{
+    background-color: white;
+    width: 60vw;
+    height: 28vw;
+    margin-left: 8vw;
+    margin-top: 0.5vh;
+    overflow-y: scroll;
+}
+
+.questionandoptions{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.quesno{
+    float: left;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 35px;
+    font-size: 25px;
+    font-family: 'PT Serif', serif;
+    width: 57vw;
+    height: 6vh;
+    border-bottom: 1px dashed black;
+}
+
+.ques{
+    float: left;
+    background-color: white;
+    margin: 30px 0 0 30px;
+    width: 58vw;
+    overflow-y: scroll;
+}
+
+.opt{
+    float: left;
+    background-color: white;
+    margin: 30px 0 0 30px;
+    width: 58vw;
+}
+
+.buttons{
+    width: 60vw;
+    height: 8vh;
+    background-color: white;
+    margin-left: 8vw;
+    border-bottom: 1px solid black;
+}
+
+.buttonSAN{
+    background-color: #5cb85c;
+    height: 5vh;
+    margin: 10px 5px 0 30px;
+    padding: 5px;
+    color: white;
+    width: 12vw;
+    cursor:pointer;
+}
+
+.buttonC{
+    background-color: #0066A2;
+    height: 5vh;
+    margin: 0 5px 0 10px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 8vw;
+    cursor:pointer;
+}
+
+.buttonSAMFR{
+    background-color: #f0ad4e;
+    height: 5vh;
+    margin: 0 5px 0 10px;
+    padding: 5px;
+    color: white;
+    width: 16vw;
+    cursor:pointer;
+}
+
+.buttonMFRAN{
+    background-color: #337ab7;
+    height: 5vh;
+    margin: 0 5px 0 10px;
+    padding: 5px;
+    color: white;
+    width: 16vw;
+    cursor:pointer;
+}
+
+.MoreButton{
+    width: 60vw;
+    height: 8vh;
+    background-color: white;
+    margin-left: 8vw;
+    border-bottom: 1px solid black;
+}
+
+.Back{
+    background-color: #0066A2;
+    height: 5vh;
+    margin: 0 5px 0 10px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 6vw;
+    cursor:pointer;
+}
+
+.Next{
+    background-color: #0066A2;
+    height: 5vh;
+    margin: 0 5px 0 5px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    width: 6vw;
+    cursor:pointer;
+}
+
+.Submit{
+    background-color: #5cb85c;
+    height: 5vh;
+    margin: 10px 5px 0 570px;
+    padding: 5px;
+    color: white;
+    width: 8vw;
+    cursor:pointer;
+}
+
+.instruct{
+    /* float: right; */
+    background-color: white;
+    margin-right: 6.4vw;
+    /* margin-top: 20.5vh; */
+    height: 30vh;
+    width: 25vw;
+    border: 2px dashed black;
+}
+
+.allques{
+    /* float: right; */
+    background-color: white;
+    margin-right: 6.5vw;
+    height: 44.5vh;
+    width: 25vw;
+    overflow-y: scroll;
+    border: 1px solid black;
+    /* box-sizing: border-box; */
+}
+
+.allques .box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.allques .box a{
+    margin: 5px;
+    padding: 20px;
+    background-color: gray;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#countdown {
+    background-color: white;
+    font-size: 50px;
+    height: 10vw;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#countDown{
+    float: left;
+    margin-top: 5vh;
+    margin-left: 6vw;
+    background-color: white;
+}
+.div1{
+    margin-top: 5vh;
+    margin-left: 1.5vw;
+    height: 6vh;
+    background-color: white;
+}
+.div2{
+    margin-top: 2.5vh;
+    margin-left: 1.2vw;
+    height: 6vh;
+    background-color: white;
+    overflow-y:visible;
+}
+.div3{
+    margin-top: 2.5vh;
+    margin-left: 1.35vw;
+    height: 8vh;
+    background-color: white;
+}
+.quesnotvisited{
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.NotVisited{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.notanswered{
+    margin: 0 7px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: #df4401 0px 30px 60px -12px inset, #df4401 0px 18px 36px -18px inset;
+}
+
+.NotAnswered{
+    margin-left: 5px;
+}
+
+.answered{
+    margin: 0 7px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: #2dbf00 0px 30px 60px -12px inset, #2dbf00 0px 18px 36px -18px inset;
+}
+
+.marketforreview{
+    margin: 0 7px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: whitesmoke;
+    box-shadow: #3f197c 0px 30px 60px -12px inset, #3a127a 0px 18px 36px -18px inset;
+}
+
+.ansandmarketforreview{
+    margin: 0 6.9px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: black;
+    box-shadow: #bdeb06 0px 30px 60px -12px inset, #43ff2f 0px 18px 36px -18px inset;
+}
+
+.qno{
+    box-sizing: border-box;
+    padding: 7px 13px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.row{
+    margin: 25px;
+}

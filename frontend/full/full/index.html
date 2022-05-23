@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">Full Screen</button>
+    <button id="btn2">Close Full Screen</button>
+</body>
+<script>
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+
+    var el = document.documentElement;
+
+    btn1.addEventListener('click', ()=>{
+        if (el.requestFullscreen) {
+            el.requestFullscreen();
+        }
+    })
+
+    btn2.addEventListener('click', ()=>{
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    })
+</script>
+</html>

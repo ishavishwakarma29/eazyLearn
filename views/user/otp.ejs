@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+  <div class="imgleft">
+    <img class="img1" src="images/Screenshot (64).png" alt="" />
+  </div class="allother">
+
+  <div class="right">
+    <div class="Heading1">
+      <h1>Otp Verification</h1>
+    </div>
+    <div class="Heading2">
+      <h4>please enter otp that has been send to your email <span id="id-marker"><%= email %></span></h4>
+    </div>
+
+
+    <div class="form">
+      <form method="post" action="/signup/auth">
+        <div class="form-group">
+          <label for="otp">
+            <h5>One time Password</h5>
+          </label>
+          <input name="otp" type="text" class="form-control" id="otp" placeholder="Otp" required>
+        </div>
+        <div class="errorMsg">
+          <%= errorMsg %>
+        </div>
+        <button type="submit" class="btn btn-primary" id="IDBtn">Verify Otp</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="/javascripts/login.js"></script>
+</body>
+
+</html>

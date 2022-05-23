@@ -1,0 +1,40 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4F6C7;
+    width: 30vw;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-left: 6vw;
+}
+
+.btn{
+    padding: 20px;
+    border: none;
+    background-color: #57df21;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+.aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    margin-top: 10vh;
+    height: 70vh;
+}

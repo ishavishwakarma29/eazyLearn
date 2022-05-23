@@ -1,0 +1,195 @@
+body
+{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #e4e9fd;
+}
+
+.item1
+{
+    background-color: #a683e3;
+    padding-top: 20px;
+    padding-left: 2%;
+}
+
+
+.profile
+{
+    color: #a683e3;
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px grey;
+        border-radius: 1mm;
+    text-align: center;
+    padding: 10px;
+}
+
+.user
+{
+    font-size: 2rem;
+}
+.item2
+{
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-color: #e4e9fd;
+    display: flex;
+    justify-content: center;
+
+}
+.links
+{
+   text-decoration: none;
+   color: white;
+   font-size: 2rem;
+}
+
+.innerBox
+{
+    margin-top: 2%;
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #a683e3;
+        box-shadow: 0 0 10px #a683e3;
+}
+
+.assignmentForm
+{
+    /* font-size: 2rem; */
+    color: #2b0669;
+    margin: 2rem;
+}
+
+input
+{
+    margin: 20px;
+    margin-left: 0;
+}
+
+.name
+{
+    border: 0;
+    border-bottom: 1px solid #a683e3;
+    width: 50%;
+    font-size: 1.5rem;
+    color: #a683e3;
+}
+.name:focus
+{
+    outline: #a683e3;
+}
+
+.nameLbl
+{
+    font-size: 2rem;
+}
+
+.lbl 
+{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.team
+{
+    border: 0;
+    border-bottom: 1px solid #a683e3;
+    width: 50%;
+    font-size: 1.5rem;
+    color: #a683e3;
+}
+
+.team:focus
+{
+    outline: #a683e3;
+}
+
+.date
+{
+    width: auto;
+    height: 1.5rem;
+    color: #2b0669;
+}
+
+.time
+{
+    width: auto;
+}
+
+.right
+{
+    float: right;
+    margin-right: 2rem;
+}
+
+.instructions
+{
+    border: 0;
+    border-bottom: 1px solid #a683e3;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #a683e3;
+}
+
+.instructions:focus
+{
+    outline: #a683e3;
+}
+
+::-webkit-file-upload-button
+{
+    background-color: #a683e3;
+    min-width: 10vw;
+    width: fit-content;
+    border-radius: 1mm;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0px 2px 15px #61459182;
+    background-color: #a683e3;
+    height: 35px;
+    margin: 20px 10px;
+    margin-left: 3px;
+}
+
+::-webkit-file-upload-button:hover
+{
+    transform: scale(1.02);
+  box-shadow: 0px 3px 15px #61459182;
+}
+
+.add
+{
+    min-width: 30%;
+    width: fit-content;
+    height: 35px;
+    position: relative;
+    margin-left: 35%;
+    display: block;
+    border-radius: 1mm;
+    border: 0;
+    background-color: greenyellow;
+    box-shadow: 0px 2px 5px rgb(139, 194, 57);
+    color: rgb(6, 66, 2);
+    font-size: 18px;
+    font-weight: 600;
+    }
+
+.add:hover
+{
+    transform: scale(1.02);
+  box-shadow: 0px 2px 5px rgb(74, 107, 24);
+}

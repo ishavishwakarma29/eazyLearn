@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test</title>
+  <link rel="stylesheet" href="css/aman/testplatformmain.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="infosection">
+        <div class="leftinfo">
+          <div class="profile"><span class="initials">IA</span></div>
+          <span class="otherinfo">Name :<span class="bgwhite"> Isha Vishwakarma</span></span>
+        </div>
+        <div class="language">English</div>
+        <span class="otherinfo1">Exam Name :<span class="bgwhite"> JEE Advanced</span></span>
+        <span class="otherinfo1">Subject Name :<span class="bgwhite"> Chemistry</span></span>
+        <span class="otherinfo1">Total Marks :<span class="bgwhite"> 300</span></span>
+      </div>
+
+      <div class="questionandoptions">
+        <div class="quesno">Question <span id="qchange">1</span></div>
+        <div class="ques" id="question">
+        </div>
+        <div class="opt"><b class="bgwhite"> Options :</b></div>
+        <div class="opt1 opt">
+          <input type="radio" id="abcdee" name="answer" value="1" /> <label for="abcdee" class="bgwhite">(A) <span
+              id="option1"></span></label>
+        </div>
+        <div class="opt2 opt">
+          <input type="radio" id="abb" name="answer" value="2" /> <label for="abb" class="bgwhite"> (B) <span
+              id="option2"></span></label>
+        </div>
+        <div class="opt3 opt">
+          <input type="radio" id="abcc" name="answer" value="3" /> <label for="abcc" class="bgwhite">(C) <span
+              id="option3"></span></label>
+        </div>
+        <div class="opt4 opt">
+          <input type="radio" id="abcdd" name="answer" value="4" /> <label for="abcdd" class="bgwhite"> (D) <span
+              id="option4"></span></label>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <input type="text" id="testid" value="<%=testid%>" hidden>
+        <input type="text" id="qno" value="<%=qno%>" hidden>
+        <input type="text" id="user" value="<%=user%>" hidden>
+        <button class="buttonSAN" id="save_n_next" value="1">Save And Next</button>
+        <button class="buttonC" id="clear">Clear</button>
+        <button class="buttonSAMFR">Save And Mark For Review</button>
+        <button class="buttonMFRAN">Mark For Review And Next</button>
+      </div>
+
+      <div class="MoreButton">
+        <button class="Back">&lt;&lt;Back</button>
+        <button class="Next">Next&gt;&gt;</button>
+        <form action="/testplatform/test/<%=testid%>" method="post">
+          <button class="Submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="aside">
+
+      <p id="countdown"><span id="countDown"></span></p>
+      <div class="instruct">
+        <div class="div1">
+          <span class="quesnotvisited">45</span>
+          <span class="NotVisited bgwhite">Not Visited</span>
+          <span class="notanswered">10</span>
+          <span class="NotAnswered bgwhite">Not Answered</span>
+        </div>
+
+        <div class="div2">
+          <span class="answered">10</span>
+          <span class="Answered bgwhite">Answered</span>
+          <span class="marketforreview">12</span>
+          <span class="MarkForReview bgwhite">Mark For Review</span>
+        </div>
+
+        <div class="div3">
+          <span class="ansandmarketforreview">2</span>
+          <span class="AnsAndMarkForReview bgwhite">Answered & Marked For Review</span>
+        </div>
+      </div>
+      <div class="allques">
+        <div class="box">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="javascripts/aman/testplatformmain.js"></script>
+
+</html>

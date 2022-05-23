@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #A683E3;
+    height: auto;
+    width: 80vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    margin: 30px auto;
+}
+
+.head{
+    font-size: 40px;
+}
+
+.marker{
+    color: white;
+    text-decoration: underline;
+}
+
+.button{
+    padding: 20px;
+    background-color: #3c2e54;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover{
+    opacity: 0.7;
+}

@@ -47,6 +47,11 @@ h5,h6
     margin-top: 3vh;
 }
 
+#id-marker{
+    text-decoration:underline;
+    color: rgb(0,123,255);
+}
+
 @media screen and (max-width: 567px) {
    .imgleft{width:100vw}
    .img1{width:100vw}

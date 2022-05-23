@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/isha/assignment.css">
+    <script src="https://kit.fontawesome.com/42d50a4c3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="profile">
+                <i class="fa-solid fa-circle-user fa-5x"></i><br><br><br>
+                <span class="user">sambhav jain</span>
+            </div>
+            <a class="links" href=""><i class="fa-solid fa-pen"></i>   teams</a><br><br><br>
+            <a class="links" href="test.html"><i class="fa-solid fa-pen"></i>   create test</a><br><br><br>
+            <a class="links"  href=""><i class="fa-solid fa-pen"></i>   Create assignment</a>
+        </div>
+        <div class="item2">
+            <div class="innerBox">
+                <form class="assignmentForm" action="/admin/assignment" method="post" enctype="multipart/form-data">
+                    <label for="" class="nameLbl">Assignment Name:</label><br>
+                    <input type="text" name="assignmentName" id="" class="name" autocomplete="off" required><br>
+                    <label for="" class="lbl">Team Code:</label><br>
+                    <input type="text" class="team" name="teamCode" autocomplete="off" required><br>
+                    <label for="" class="lbl">Due Date:</label>
+                    <input type="date" class="date" name="dueDate" autocomplete="off" required>
+                    <div class="right">
+                        <label for="" class="lbl">Due Time:</label>
+                    <input type="time" class="time" name="dueTime" autocomplete="off" required>
+                    </div>
+                    <br><br>
+                    <div>
+                        <label for="" class="lbl">Instructions:</label><br>
+                        <input type="text" class="instructions" name="instructions" autocomplete="off" required>
+                    </div>
+                    <br>
+                    <label for="" class="lbl">Add assignment file:</label><br>
+                    <input type="file" class="file" name="assignmentFile" required><br>
+                    <button class="add" type="submit">Add Assignment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
