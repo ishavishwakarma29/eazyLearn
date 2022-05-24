@@ -61,8 +61,8 @@
         <h2>Assignment file:</h2>
         <button class="download"><a href="/uploads/assignment/<%=data.filename%>" download>Download</a></button>
         <h2>Add your work :</h2>
-        <form action="" method="post">
-            <input type="file">
+        <form action="/user/assignment/<%=data._id%>" method="post" enctype="multipart/form-data">
+            <input type="file" name="submitassignment" required>
             <button type="submit" class="submit">Submit</button>
         </form>
     </div>
