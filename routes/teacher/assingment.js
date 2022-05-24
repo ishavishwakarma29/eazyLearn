@@ -17,7 +17,7 @@ const extraname = randomstring.generate({
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './uploads/assignment');
+        cb(null, './public/uploads/assignment');
     },
     filename: function (req, file, cb) {
         cb(null, Date.now() + extraname+ file.originalname);
