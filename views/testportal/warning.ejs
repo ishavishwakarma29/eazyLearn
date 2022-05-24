@@ -28,17 +28,17 @@
                     <thead>
                         <tr style="border-bottom: 1px solid black;">
                             <th class="bgwhite" style="color: black; width: 40vw;">Number Of Question</th>
-                            <th class="bgwhite" style="color: black; width: 20vw;">75</th>
+                            <th class="bgwhite" style="color: black; width: 20vw;"><%=total%></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="bgwhite">Answered</td>
-                            <td class="bgwhite">5</td>
+                            <td class="bgwhite"><%=tattempted%></td>
                         </tr>
                         <tr>
                             <td class="bgwhite">Not Answered</td>
-                            <td class="bgwhite">70</td>
+                            <td class="bgwhite"><%=notanswered%></td>
                         </tr>
                         <tr>
                             <td class="bgwhite">Marked For Review</td>
@@ -50,7 +50,7 @@
                         </tr>
                         <tr>
                             <td class="bgwhite">Not Visited</td>
-                            <td class="bgwhite">60</td>
+                            <td class="bgwhite"><%=notvisited%></td>
                         </tr>
                         
                     </tbody>
@@ -62,7 +62,7 @@
             <div class="statement">Are You Sure You Want to Submit For Final Marking ?</div>
             <div class="statementcontinue">No Changes will be allowed after Submission.</div>
             <div class="buttons">
-                <button class="YesButton">Yes</button>
+                <form action="<%=link%>" method="post"><button class="YesButton" >Yes</button></form>
                 <button class="NoButton">No</button>
             </div>
         </div>

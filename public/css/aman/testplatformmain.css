@@ -332,3 +332,7 @@
 .row{
     margin: 25px;
 }
+
+form{
+    display: inline;
+}

@@ -35,6 +35,9 @@ router.get("/:testid",function(req,res){
             const accuracy = (correctanswer/tattempted)*100;
             Testinfo.findOne({test_id:testId},function(err3,data_testinfo){
                 const getmarks = data_testinfo.marks * correctanswer;
+                Savedresponse.findOneAndUpdate({test_id:testId, user:user},{marks:getmarks},function(errupdate,update){
+
+                });
                 res.render("testportal/result.ejs",{total:no_of_question,tattempted:tattempted,correctanswer:correctanswer,incorrect:incorrectanswer,getmarks:getmarks,accuracy:accuracy});
             });
             

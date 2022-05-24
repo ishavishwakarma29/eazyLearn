@@ -12,15 +12,17 @@ router.use(express.static("public"));
 router.get("/:assignment_id",function(req,res){
     const assignment_id = req.params.assignment_id;
     Tassign.findOne({_id:assignment_id},function(err,data){
-        console.log(data);
+        const info = data;
+        console.log(info);
         // const admin = data.admin;
         // console.log(admin);
         // Admin.findOne({email:admin},function(err2,data_admin){
-        //     const subject = data_admin.subject;
-        //     console.log(subject);
+        //     // const subject = data_admin.subject;
+        //     console.log(data_admin);
+        //     // console.log(subject);
         //     res.render("userinterface/assignmentsubmit.ejs",{data:data,subject:subject});
         // });
-        res.render("userinterface/assignmentsubmit.ejs",{data:data,subject:"english"});
+        res.render("userinterface/assignmentsubmit.ejs",{data:info,subject:"english"});
     });
 });
 

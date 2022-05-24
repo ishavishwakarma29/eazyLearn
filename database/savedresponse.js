@@ -6,8 +6,8 @@ mongoose.connect("mongodb+srv://sam233:42119243Sam@cluster0.bgt3y.mongodb.net/us
 const sresponseSchema = new mongoose.Schema({
     test_id : String,
     user : String,
-    Response : []
-    
+    Response : [],
+    marks : String
 });
 
 const Savedresponse = mongoose.model("Savedresponse", sresponseSchema);

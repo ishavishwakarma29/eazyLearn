@@ -167,3 +167,7 @@
     background-color: white;
     cursor: pointer;
 }
+
+form{
+    display: inline;
+}

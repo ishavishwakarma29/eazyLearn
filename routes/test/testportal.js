@@ -17,7 +17,7 @@ router.get("/:testid",function(req,res){
 
 router.post("/:testid",function(req,res){
     const testId = req.params.testid;
-    res.redirect("/testplatform/result/"+testId);
+    res.redirect("/testplatform/warning/"+testId);
 });
 
 //exports------------------------------------------------------------------------------------------------------
