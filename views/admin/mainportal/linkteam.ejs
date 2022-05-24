@@ -15,25 +15,20 @@
         <div class="item1">
             <div class="profile">
                 <i class="fa-solid fa-circle-user fa-5x"></i><br><br><br>
-                <span class="user"><%=admin%></span>
+                <span class="user">
+                    <%=admin%>
+                </span>
             </div>
             <a class="links" href="/admin"><i class="fa-solid fa-pen"></i> teams</a><br><br><br>
             <a class="links" href="/createtest/info"><i class="fa-solid fa-pen"></i> create test</a><br><br><br>
             <a class="links" href=""><i class="fa-solid fa-pen"></i> Create assignment</a>
         </div>
         <div class="item2">
-            <div class="teamsicn">
-
-                <% render.forEach(function(item){ %>
-                <div class="teamNo">
-                    <span class="subName"><%=item.teamname%></span><br><br>
-                    <button class="btn"><%=item.teamname[0].toUpperCase()%></button>
+                <div class="linkteam-flex">
+                    <p class="linkteam-p">Your team has been successfully created</p>
+                    <p class="linkteam-p">team Id : <%=teamid%></p>
+                    <p class="linkteam-p">link to join team : <%=link%></p>
                 </div>
-                <% }); %>
-
-
-                <button class="new"><a href="/admin/createteam">+</a></button>
-            </div>
         </div>
     </div>
 </body>

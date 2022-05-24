@@ -23,16 +23,12 @@
         </div>
         <div class="item2">
             <div class="teamsicn">
-
-                <% render.forEach(function(item){ %>
-                <div class="teamNo">
-                    <span class="subName"><%=item.teamname%></span><br><br>
-                    <button class="btn"><%=item.teamname[0].toUpperCase()%></button>
-                </div>
-                <% }); %>
-
-
-                <button class="new"><a href="/admin/createteam">+</a></button>
+                <form action="" method="post" class="createteam-box">
+                    <input type="text" name="teamname" placeholder="Team Name" required class="form-createteaem inupt-createtest" autocomplete="off">
+                    <input type="text" name="classname" placeholder="Class" required class="form-createteaem inupt-createtest" autocomplete="off">
+                    <input type="text" name="timing" placeholder="Timing of Class" required class="form-createteaem inupt-createtest" autocomplete="off">
+                    <input type="submit" value="Create Team" class="form-createteaem btn-createtest">
+                </form>
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@ const assignment = require("./assingment");
 const createTeam = require("./createteam");
 const viewresult = require("./viewresult");
 const Admin = require("../../database/admininfo");
+const Team = require("../../database/team");
 
 //middlewares ------------------------------------------------------------------------------------------
 let router = express.Router();
@@ -18,7 +19,11 @@ router.get("/",function(req,res){
     const admin = req.cookies.teacherEmail;
     Admin.findOne({email:admin},function(err,data_admin){
         const name = data_admin.name;
-        res.render("admin/mainportal/adminteam.ejs",{admin:name});
+        Team.find({admin : admin},function(err2,data_team){
+            // console.log(data_team);
+            res.render("admin/mainportal/adminteam.ejs",{admin:name,render:data_team});
+        });
+        
     });
 });
 

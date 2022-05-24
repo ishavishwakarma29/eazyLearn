@@ -5,7 +5,10 @@ mongoose.connect("mongodb+srv://sam233:42119243Sam@cluster0.bgt3y.mongodb.net/us
 
 const teamSchema = new mongoose.Schema({
     admin : String,
-    team_id : String
+    team_id : String,
+    teamname:String,
+    timing:String,
+    classname : String
 });
 
 const Team = mongoose.model("Team", teamSchema);
