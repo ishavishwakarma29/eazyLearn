@@ -59,8 +59,7 @@
         <h2>Instructions :</h2>
         <h4><span class="info instruct"><%=data.instructions%></span></h4>
         <h2>Assignment file:</h2>
-        <button class="download"><a href="/woc.zip" download>Download</a></button>
-          </a>
+        <button class="download"><a href="/uploads/assignment/<%=data.filename%>" download>Download</a></button>
         <h2>Add your work :</h2>
         <form action="" method="post">
             <input type="file">
@@ -69,7 +68,5 @@
     </div>
    
 </div >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="assignmentStudent.js"></script>
 </body>
 </html>
