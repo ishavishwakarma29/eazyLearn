@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Result</title>
+    <link rel="stylesheet" href="css/aman/reviewtest.css">
+</head>
+<body>
+
+        
+        <div class="infosection">
+            <div class="leftinfo">
+              <div class="profile"><span class="initials">IA</span></div>
+              <span class="otherinfo">Name :<span class="bgwhite"> Isha Vishwakarma</span></span>
+            </div>
+            <div class="language">English</div>
+            <span class="otherinfo1">Exam Name :<span class="bgwhite"> JEE Advanced</span></span>
+            <span class="otherinfo1">Subject Name :<span class="bgwhite"> Chemistry</span></span>
+            <span class="otherinfo1">Total Marks :<span class="bgwhite"> 20</span></span>
+        </div>
+        
+
+        <!-- <div class="thankyou">
+            Thank You !! You Submitted your test Successfully.
+        </div> -->
+        
+        <!-- <div class="scorecard">
+            <div class="text1">Score Card</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">75</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">5</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">4</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">1</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">15</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">80%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+        <!-- <div class="physics">
+            <div class="text1">Physics Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">1</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">0</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">1</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">-1</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chemistry">
+            <div class="text1">Chemistry Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">2</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">2</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">8</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">100%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="maths">
+            <div class="text1">Maths Score</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="lefttable">Total Question</th>
+                        <th class="righttable">25</th>
+                        <th class="lefttable">Total Attempted</th>
+                        <th class="righttable">2</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Correct Answer</th>
+                        <th class="righttable">2</th>
+                        <th class="lefttable">Incorrect Answer</th>
+                        <th class="righttable">0</th>
+                      </tr>
+                    <tr>
+                        <th class="lefttable">Score</th>
+                        <th class="righttable">8</th>
+                        <th class="lefttable">Accuracy</th>
+                        <th class="righttable">100%</th>
+                      </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+
+        <!-- Questions -->
+
+        <% let q = 1 %>
+        <% data.forEach(function(item){ %>
+        
+        <div class="questionandoptions <%if(item.response== item.correct){%>border-green<%}else{%>border-red<%}%>">
+            <div class="quesno">Question <%=q%></div>
+            <div class="ques">
+              <%=item.question%>
+            </div>
+            
+            <div class="opt"><b class="bgwhite"> Options :</b></div>
+            <% let i = 1 %>
+            <% item.options.forEach(function(option){ %>
+            <div class=" opt ">
+              <input type="checkbox" id="abcdee" class="disablecheckbox" <% if(item.response== i){ %>checked <%}%>/> <label for="" class="bgwhite"><%=option%></label>
+            </div>
+            <% i++ %>
+            <% }); %>
+            <!-- <div class="opt2 opt">
+              <input type="checkbox" id="abb" class="disablecheckbox"/> <label for="" class="bgwhite "> (B) invert sugar is an equimolar mixture of
+              D-(+)glucose and D-(+)-fructose</label>
+            </div>
+            <div class="opt3 opt">
+              <input type="checkbox" id="abcc" class="disablecheckbox"/> <label for="" class="bgwhite ">(C) specific rotation of invert sugar is -20
+              degrees</label>
+            </div>
+            <div class="opt4 opt">
+              <input type="checkbox" id="abcdd" class="disablecheckbox"/> <label for="" class="bgwhite "> (D) on reaction with Br2 water, invert sugar
+              forms saccharic acid as one of the products</label>
+            </div> -->
+
+            <div class="correctoption">
+                Correct Answer : <%=item.options[item.correct-1]%> (<%=item.correct%>) 
+            </div>
+        </div>
+        <% q++ %>
+        <% }); %>
+
+        
+        
+          <!-- ~~~~~~~~~~~~~~~~End Of All Questions~~~~~~~~~~~~~~~ -->
+
+        <!-- <div class="review bgwhite">
+            <div class="text2 bgwhite">Review</div>
+            <div class="reviewcontent">
+                You Have to understand the importance of perfoming in all the subjects with approximately same accuracy. This will surely help you to accompplish your dreams. Also, you should pratice medium and tough level question so that you can attempt more questions. 
+                <div class="grade"> Grade : C</div>
+            </div>
+        </div>
+
+        <div class="downloadpdf bgwhite">
+            <div class="formfordownld bgwhite">
+            <form id="formpdfdwnld" action="https://drive.google.com/file/d/1pOQb4uPdEE7C9zd8Ar7vVSC5zeSPHVjI/view?usp=sharing">
+                <input type="submit" value="View And Download the Answer along with Solution of your Test." id="btnpdfdwnld" style="cursor: pointer; float: right; padding: 10px; font-size: 15px; font-weight: 700; margin-right: 15px; background-color: slateblue; color: whitesmoke;" class="bgwhite"/>
+            </form>
+            </div>
+        </div> -->
+</body>
+</html>

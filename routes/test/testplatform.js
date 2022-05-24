@@ -4,6 +4,7 @@ const testportal = require("./testportal");
 const testuserinfo = require("./testuserinfo");
 const warning = require("./warning");
 const result = require("./result");
+const reviewtest = require("./reviewtest");
 
 //middlewares ------------------------------------------------------------------------------------------
 let router = express.Router();
@@ -13,6 +14,7 @@ router.use("/test",testportal);
 router.use("/testinfo",testuserinfo);
 router.use("/warning",warning);
 router.use("/result",result);
+router.use("/reviewtest",reviewtest);
 
 //routes---------------------------------------------------------------------------------------------------
 router.get("/",function(req,res){
