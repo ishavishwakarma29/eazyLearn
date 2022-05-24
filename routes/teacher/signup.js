@@ -50,7 +50,7 @@ router.post("/", function (req, res) {
                         expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)
                     }
                     res.cookie("teacherEmail", email, options);
-                    res.send("cookie saved");
+                    res.redirect("/admin");
                 }
                 else {
                     console.log("password not matched");

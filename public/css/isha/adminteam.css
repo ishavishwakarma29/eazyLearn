@@ -1,0 +1,120 @@
+body
+{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a683e3;
+}
+
+.item1
+{
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-left: 2%;
+}
+.item2
+{
+    float: right;
+    width: 80vw;
+    height: 100vh;
+    background-color: #e4e9fd;
+
+}
+.links
+{
+   text-decoration: none;
+   color: white;
+   font-size: 2rem;
+}
+
+.profile
+{
+    color: #a683e3;
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px grey;
+        border-radius: 1mm;
+    text-align: center;
+    padding: 10px;
+}
+
+.user
+{
+    font-size: 2rem;
+}
+
+.teamsicn
+{
+    display: block;
+    margin: 5%;
+    margin-top: 3%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #a683e3;
+        box-shadow: 0 0 10px #a683e3;
+}
+
+.teamNo
+{
+    font-size: 1.5rem;
+    padding: 20px;
+    display: inline-block;
+    margin: 3%;
+    width: 22%;
+    height: 20%;
+    background-color: rgba(164, 133, 218, 0.49);
+    -webkit-box-shadow: 0 0 5px #6f25ef;
+        box-shadow: 0 0 5px #6f25ef;
+}
+
+.btn
+{
+    color: #e4e9fd;
+    border: none;
+   background-color: #a683e3;
+    width: 100%;
+    height: 60%;
+    -webkit-box-shadow: 0 0 10px white;
+        box-shadow: 0 0 10px white;
+        border-radius: 0.5mm;
+    cursor: pointer;
+    font-size: 3.5rem;
+}
+
+.btn:hover
+{
+    transform: scale(1.02);
+}
+.subName
+{
+   color: rgb(142, 62, 217);
+}
+
+.new
+{
+    float: right;
+    margin: 5%;
+    margin-top: 45vh;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 3.5rem;
+    background-color: #6f25ef;
+    cursor: pointer;
+}
+.new:hover
+{
+    transform: scale(1.2);
+}
