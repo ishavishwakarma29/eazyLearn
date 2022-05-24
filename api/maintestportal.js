@@ -33,7 +33,7 @@ router.post("/", function (req, res) {
             question: question,
             options: options
         }
-        console.log(qobj);
+        // console.log(qobj);
         res.send(qobj);
     });
 

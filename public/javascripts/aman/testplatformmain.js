@@ -1,6 +1,6 @@
 // For Reverse Clock
 
-const startingMinutes = 10;
+const startingMinutes = document.getElementById("time").value;
 let time = startingMinutes * 60;
 
 const countdownEl = document.getElementById('countDown');
@@ -20,6 +20,8 @@ function updateCountDown() {
         countdownEl.style.marginTop = '7vh';
         countdownEl.style.marginLeft = '4vw';
         countdownEl.style.color = 'red';
+        const testid = document.getElementById("testid").value;
+        window.location = "http://localhost:3000/testplatform/warning/"+testid;
     }
     if (minutes < 0) {
         countdownEl.innerHTML = `Time's Up`;
