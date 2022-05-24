@@ -21,6 +21,7 @@ const testplatform = require("./routes/test/testplatform");
 
 //api -----------------------------------------------
 const maintestportalapi = require("./api/maintestportal");
+const getresultapi = require("./api/getresultapi");
 
 //user ---------------------------------------------
 const user = require("./routes/user/assignmentsubmit");
@@ -43,6 +44,7 @@ app.use("/tsignup",tsignup);
 app.use("/testplatform",testplatform);
 app.use("/createtest",createtest);
 app.use("/api/testportalmain",maintestportalapi);
+app.use("/api/getresult",getresultapi);
 app.use("/admin",admin);
 app.use("/user/assignment",user);
 

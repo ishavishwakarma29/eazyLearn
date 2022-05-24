@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/isha/assignment.css">
+    <script src="https://kit.fontawesome.com/42d50a4c3d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <div class="profile">
+                <i class="fa-solid fa-circle-user fa-5x"></i><br><br><br>
+                <span class="user">sambhav jain</span>
+            </div>
+            <a class="links" href=""><i class="fa-solid fa-pen"></i> teams</a><br><br><br>
+            <a class="links" href="test.html"><i class="fa-solid fa-pen"></i> create test</a><br><br><br>
+            <a class="links" href=""><i class="fa-solid fa-pen"></i> Create assignment</a>
+        </div>
+        <div class="item2">
+
+            <% data.forEach(function(item){ %>
+            <div class="innerBox ">
+                <div class="grid">
+                    <div class="left-viewresult">
+                        <p class="viewresult-p"><%=item.email%></p>
+                    </div>
+                    <div class="right-viewresult">
+                        <p class="viewresult-p marks"><%=item.marks%></p>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
