@@ -5,7 +5,7 @@
             <% teams.forEach(element =>{ %>
             <div class="subject">
                 <h2><%=element.teamname%></h2>
-                <form class="" action="/user/team/<%=element.teamid%>" method="post">
+                <form class="" action="/user/<%=element.teamid%>" method="post">
                   <button class="team" type="submit" style="background-color:  rgb(212, 246, 199);"><%=element.teamname[0].toUpperCase()%></button>
                 </form>
             </div>
@@ -25,6 +25,6 @@
             </div> -->
         </div>
         <div class="add-team">
-            <a>+</a>
+            <a href="/user/jointeam">+</a>
         </div>
 <%- include("../partials/footer") -%>

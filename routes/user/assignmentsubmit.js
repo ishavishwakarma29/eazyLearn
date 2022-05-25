@@ -5,6 +5,8 @@ const Admin = require("../../database/admininfo");
 const randomstring = require("randomstring");
 const multer = require('multer');
 const Assignsubmit = require("../../database/assignmentsubmit");
+const Teamdetail = require("../../database/teamdetails");
+// const Tassign = require("../../database/tassignment");
 
 //middlewares ------------------------------------------------------------------------------------------
 let router = express.Router();
@@ -34,6 +36,32 @@ var upload = multer({ storage: storage }).single("submitassignment");
 
 
 //routes---------------------------------------------------------------------------------------------------
+router.get("/", function (req, res) {
+    const teamId = req.query.teamid;
+    const send_data = [];
+    Teamdetail.findOne({team_id : teamId},function(err,data_teamdetail){
+        const assignment = data_teamdetail.assignment;
+        assignment.forEach(element => {
+            Tassign.findOne({_id:element},function(err_tassign, data_tassign){
+                const object ={
+                    assignmentname : data_tassign.assignment_name,
+                    duedate : data_tassign.dueDate,
+                    duetime : data_tassign.dueTime,
+                    id : element
+                }
+                send_data.push(object);
+            });
+        });
+        setTimeout(() => {
+            console.log(send_data);
+            res.render("userinterface/assignment.ejs",{teamid : teamId,data:send_data});
+        }, 4000);
+        
+        
+    });
+    
+});
+
 router.get("/:assignment_id", function (req, res) {
     const assignment_id = req.params.assignment_id;
     Tassign.findOne({ _id: assignment_id }, function (err, data) {

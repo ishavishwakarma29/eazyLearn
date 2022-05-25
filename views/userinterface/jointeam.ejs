@@ -1,0 +1,12 @@
+<%- include("../partials/header") -%>
+        <h3>TEAMS</h3>
+        <hr>
+        <div class="join-team">
+            <div class="join-team-box">
+                <form action="/user/jointeam" method="post">
+                <input type="text" name="teamid" class="input-jointeam" autocomplete="off">
+                <input type="submit" value="Join Team" class="btn-jointeam">
+            </form>
+            </div>
+        </div>
+<%- include("../partials/footer") -%>

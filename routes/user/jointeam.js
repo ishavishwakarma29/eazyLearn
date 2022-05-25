@@ -11,11 +11,13 @@ router.use(express.static("public"));
 
 //routes---------------------------------------------------------------------------------------------------
 router.get("/", function (req, res) {
-
+    const user = req.cookies.User;
+    res.render("userinterface/jointeam.ejs" ,{name: user, firstLetter: user[0]});
 });
 
 router.post("/", function (req, res) {
-
+    const teamId = req.body.teamid;
+    res.redirect("/user/jointeam/"+teamId);
 });
 
 router.get("/:teamid", function (req, res) {
@@ -23,7 +25,7 @@ router.get("/:teamid", function (req, res) {
     const User = req.cookies.User;
     Team.findOne({ team_id: teamId }, function (err, data_team) {
         if (data_team) {
-            Userteam.findOne({ user: User }, function (err_user, data_user) {
+            Userteam.findOne({ user: User ,team_id:teamId}, function (err_user, data_user) {
                 if (!data_user) {
                     const newteamuser = new Userteam({
                         user: User,

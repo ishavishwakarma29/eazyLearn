@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Batches</title>
+    <script src="https://kit.fontawesome.com/2121515fbf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/isha/assignmentsubmit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Container">
+                <div class="Nav-item">
+                    <a href="">Batches</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Time Table</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Reports</a>
+                </div>
+                <div class="Nav-item">
+                    <a href="">Chat</a>
+                </div>
+                <div class="Nav-item logo">
+                    <button class="dropbtn" href=""><span class="icon">s</span>sambhav</button>
+                </div>
+            </div>
+        </nav>
+        <div id="myP">
+            <ul>
+                <li>
+                    Profile
+                </li>
+                <li>
+                    logout
+                </li>
+            </ul>
+        </div>
+    </header>
+<div class="main">
+    <div class="sidebar sqr1">
+        <div class="sidebar-item"><i class="fa-solid fa-list"></i>   Activity</div>
+        <div class="sidebar-item"><i class="fa-solid fa-clipboard-user"></i>   attendance</div>
+        <div class="sidebar-item"><a href="/user/assignment?teamid=<%=teamid%>"><i class="fa-solid fa-pen"></i>   assignments </a></div>
+        <div class="sidebar-item"><i class="fa-solid fa-bell"></i>   announcements</li></div>
+        <div class="sidebar-item"><i class="fa-solid fa-file"></i>   tests</div>
+        <div class="sidebar-item"><i class="fa-solid fa-book"></i>   study material</div>
+    </div>
+    <div class="sub-block sqr2">
+        <div class="activity">
+
+                <% data.forEach(element =>{ %>
+                
+                <div class="msg">
+                    <p><%=element.assignmentname%></p>
+                    <p>due date : <%=element.duedate%></p>
+                    <p>due time : <%=element.duetime%></p>
+                    <a href="/user/assignment/<%=element.id%>">Submit Assignment</a>
+                </div>
+
+                <% }); %>
+            
+            
+        </div>
+    </div>
+   
+</div >
+</body>
+</html>
