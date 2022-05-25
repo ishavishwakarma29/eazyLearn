@@ -3,6 +3,7 @@ const bodyparser = require("body-parser");
 const assignment = require("./assingment");
 const createTeam = require("./createteam");
 const viewresult = require("./viewresult");
+const insideteamview = require("./insideteamview");
 const Admin = require("../../database/admininfo");
 const Team = require("../../database/team");
 
@@ -13,6 +14,7 @@ router.use(express.static("public"));
 router.use("/assignment",assignment);
 router.use("/createteam",createTeam);
 router.use("/viewresult",viewresult);
+router.use("/teamid",insideteamview);
 
 //routes---------------------------------------------------------------------------------------------------
 router.get("/",function(req,res){

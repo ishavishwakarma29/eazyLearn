@@ -24,7 +24,7 @@ const maintestportalapi = require("./api/maintestportal");
 const getresultapi = require("./api/getresultapi");
 
 //user ---------------------------------------------
-const user = require("./routes/user/assignmentsubmit");
+const user = require("./routes/user/homepage");
 
 
 
@@ -46,18 +46,18 @@ app.use("/createtest",createtest);
 app.use("/api/testportalmain",maintestportalapi);
 app.use("/api/getresult",getresultapi);
 app.use("/admin",admin);
-app.use("/user/assignment",user);
+app.use("/user",user);
 
 //routes -----------------------------------------------------------------------------------
-app.get("/",function(req,res)
-{
-  const name = "sambhav";
-  res.render("allBatches.ejs",{name:name , firstLetter:name[0]});
+app.get("/",function(req,res){
+  res.redirect("/login");
 });
+
 app.get("/xyz",function(req,res)
 {
   res.render("test-create/qo.ejs",{path:"jdjkaj"});
 });
+
 app.post("/xyz",function(req,res)
 {
   console.log(req.body);

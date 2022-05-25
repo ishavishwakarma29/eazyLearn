@@ -18,11 +18,12 @@ router.use("/reviewtest",reviewtest);
 
 //routes---------------------------------------------------------------------------------------------------
 router.get("/",function(req,res){
-    
+    res.render("testportal/entertestid.ejs");
 });
 
 router.post("/",function(req,res){
-
+    const testID = req.body.testid;
+    res.redirect("/testplatform/testinfo/"+testID);
 });
 
 router.get("/starttest/:testid",function(req,res){

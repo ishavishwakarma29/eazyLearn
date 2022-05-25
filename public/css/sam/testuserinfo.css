@@ -38,3 +38,26 @@
     margin-top: 10vh;
     height: 70vh;
 }
+
+.input-text{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.input-submit{
+    display: block;
+    margin: 20px auto;
+    background-color: #57df21;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.input-submit:hover{
+    opacity: 0.6;
+
+}

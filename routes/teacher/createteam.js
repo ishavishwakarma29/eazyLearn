@@ -2,6 +2,7 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const Team = require("../../database/team");
 const Admin = require("../../database/admininfo");
+const Teamdetail = require("../../database/teamdetails");
 const randomstring = require("randomstring");
 
 
@@ -40,18 +41,25 @@ router.post("/", function (req, res) {
 
     team.save();
 
+    const teamdetailsdata = new Teamdetail({
+        admin: admin,
+        team_id: teamId
+    });
+
+    teamdetailsdata.save();
+
     console.log("team successfully created");
     res.redirect("/admin/createteam/"+teamId);
 
 });
 
-router.get("/:teamid",function(req,res){
+router.get("/:teamid", function (req, res) {
     const admin = req.cookies.teacherEmail;
     const teamId = req.params.teamid;
-    const link = "/admin/createteam/"+teamId;
+    const link = "http://localhost:3000/user/jointeam/" + teamId;
     Admin.findOne({ email: admin }, function (err, data_admin) {
         const name = data_admin.name;
-        res.render("admin/mainportal/linkteam.ejs", { admin: name ,teamid : teamId,link : link});
+        res.render("admin/mainportal/linkteam.ejs", { admin: name, teamid: teamId, link: link });
     });
 });
 

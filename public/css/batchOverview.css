@@ -68,3 +68,24 @@ h3,h4
     margin-top: 40px;
     margin-left: 50px;
 }
+
+
+.add-team{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.add-team a{
+    font-size: 60px;
+    padding: 20px 40px;
+    border-radius: 60px;
+    background-color: #d1f5a8;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-team a:hover{
+    font-size: 80px;
+    background-color: #a8de6c;
+}

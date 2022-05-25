@@ -33,7 +33,7 @@ router.post("/",function(req,res){
                         expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)
                     }
                     res.cookie("User", email, options);
-                    res.send("cookie saved");
+                    res.redirect("/user");
                 }
                 else
                 {

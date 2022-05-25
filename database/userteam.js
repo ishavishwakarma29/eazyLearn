@@ -3,20 +3,13 @@ const mongoose = require('mongoose');
 //mongodb-----------------------------------------------------------------------------------------------------
 mongoose.connect("mongodb+srv://sam233:42119243Sam@cluster0.bgt3y.mongodb.net/userwoc", {useNewUrlParser: true});
 
-const tassignSchema = new mongoose.Schema({
-    _id : String,
-    assignment_name : String,
-    admin : String,
-    teamcode : String,
-    dueDate : String,
-    dueTime : String,
-    instructions : String,
-    filename : String,
-    path : String
+const userteamSchema = new mongoose.Schema({
+    user : String,
+    team_id : String
 });
 
-const Tassign = mongoose.model("Tassign", tassignSchema);
+const Userteam = mongoose.model("Userteam", userteamSchema);
 
 // --------------------------------------------------------------------------------------------------------------
 
-module.exports = Tassign;
+module.exports = Userteam;

@@ -1,14 +1,17 @@
-<%- include("partials/header") -%>
+<%- include("../partials/header") -%>
         <h3>TEAMS</h3>
         <hr>
         <div class="list">
+            <% teams.forEach(element =>{ %>
             <div class="subject">
-                <h2>Physics</h2>
-                <form class="" action="/<%= name %>/teams/Physics" method="get">
-                  <button class="team" type="submit" style="background-color:  rgb(231, 236, 251);">P</button>
+                <h2><%=element.teamname%></h2>
+                <form class="" action="/user/team/<%=element.teamid%>" method="post">
+                  <button class="team" type="submit" style="background-color:  rgb(212, 246, 199);"><%=element.teamname[0].toUpperCase()%></button>
                 </form>
             </div>
-            <div class="subject">
+
+            <% });%>
+            <!-- <div class="subject">
                 <h2>Chemistry</h2>
                 <form class="" action="/<%= name %>/teams/Chemistry" method="get">
                   <button class="team" type="submit" style="background-color: rgb(212, 246, 199);">C</button>
@@ -19,6 +22,9 @@
                 <form class="" action="/<%= name %>/teams/Maths" method="get">
                     <button type="submit" class="team" style="background-color: rgb(246, 218, 237);">M</button>
                 </form>
-            </div>
+            </div> -->
         </div>
-<%- include("partials/footer") -%>
+        <div class="add-team">
+            <a>+</a>
+        </div>
+<%- include("../partials/footer") -%>

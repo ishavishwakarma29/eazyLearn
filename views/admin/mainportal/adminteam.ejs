@@ -19,15 +19,16 @@
             </div>
             <a class="links" href="/admin"><i class="fa-solid fa-pen"></i> teams</a><br><br><br>
             <a class="links" href="/createtest/info"><i class="fa-solid fa-pen"></i> create test</a><br><br><br>
-            <a class="links" href=""><i class="fa-solid fa-pen"></i> Create assignment</a>
+            <a class="links" href="/admin/assignment"><i class="fa-solid fa-pen"></i> Create assignment</a><br><br><br>
+            <a class="links" href="/admin/viewresult"><i class="fa-solid fa-pen"></i> View result</a>
         </div>
         <div class="item2">
-            <div class="teamsicn">
+            <div class="teamsicn scrolling">
 
                 <% render.forEach(function(item){ %>
                 <div class="teamNo">
                     <span class="subName"><%=item.teamname%></span><br><br>
-                    <button class="btn"><%=item.teamname[0].toUpperCase()%></button>
+                    <a href="/admin/teamid/<%=item.team_id%>" class="btn"><%=item.teamname[0].toUpperCase()%></a>
                 </div>
                 <% }); %>
 

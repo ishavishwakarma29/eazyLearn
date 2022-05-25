@@ -1,0 +1,135 @@
+body
+{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #a683e3;
+}
+
+.item1
+{
+    padding-top: 20px;
+    padding-top: 20px;
+    padding-left: 2%;
+}
+.item2
+{
+    float: right;
+    width: 80vw;
+    height: 100vh;
+    background-color: #e4e9fd;
+
+}
+.links
+{
+   text-decoration: none;
+   color: white;
+   font-size: 2rem;
+}
+
+.profile
+{
+    color: #a683e3;
+    width: 90%;
+    height: 30%;
+    background-color: white;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 0 10px grey;
+        box-shadow: 0 0 10px grey;
+        border-radius: 1mm;
+    text-align: center;
+    padding: 10px;
+}
+
+.user
+{
+    font-size: 2rem;
+}
+
+.teamsicn
+{
+    display: block;
+    margin: 5%;
+    margin-top: 3%;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    -webkit-box-shadow: 0 0 10px #a683e3;
+        box-shadow: 0 0 10px #a683e3;
+}
+
+.teamNo
+{
+    font-size: 15px;
+    padding: 20px;
+    display: inline-block;
+    margin: 3%;
+    width: 22%;
+    height: 20%;
+    background-color: rgba(164, 133, 218, 0.49);
+}
+
+.members
+{
+    overflow: auto;
+    float: right;
+    height: 85%;
+    -webkit-box-shadow: 0 0 5px #6f25ef;
+    box-shadow: 0 0 5px #6f25ef;
+}
+
+.announcements
+{
+    overflow-y: auto;
+    width: 58%;
+    height: 85%;
+    -webkit-box-shadow: 0 0 5px #6f25ef;
+    box-shadow: 0 0 5px #6f25ef;
+}
+
+.subdiv
+{
+    margin: 5% 0;
+    background-color: #e2daf1;
+    width: 97%;
+    /* height: 100px; */
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+
+}
+
+.message{
+    position: absolute;
+    bottom: 100px;
+    display: block;
+    margin: auto;
+}
+
+.input-message{
+    padding: 10px 20px;
+    width: 470px;
+    font-size: 20px;
+    /* background-color: #e4e9fd; */
+    border: none;
+    border-bottom: 2px solid #6f25ef;
+}
+
+.input-msg-submit{
+    padding: 13px 20px;
+    border: none;
+    background-color: #6f25ef;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.input-msg-submit:hover{
+    opacity: 0.8;
+}
