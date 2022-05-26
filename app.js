@@ -25,6 +25,7 @@ const getresultapi = require("./api/getresultapi");
 
 //user ---------------------------------------------
 const user = require("./routes/user/homepage");
+const router = require("./routes/login");
 
 
 
@@ -53,6 +54,9 @@ app.get("/",function(req,res){
   res.redirect("/login");
 });
 
+app.get("/timetable",function(req,res){
+  res.render("userinterface/timetable.ejs");
+});
 
 
 

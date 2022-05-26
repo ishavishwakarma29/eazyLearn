@@ -3,6 +3,7 @@ const bodyparser = require("body-parser");
 const assignment = require("./assignmentsubmit");
 const joinTeam = require("./jointeam");
 const overview = require("./overview");
+const video = require("./video");
 const Userteam = require("../../database/userteam");
 const Team = require("../../database/team");
 
@@ -13,6 +14,7 @@ router.use(express.static("public"));
 router.use("/assignment", assignment);
 router.use("/jointeam", joinTeam);
 router.use("/overview",overview);
+router.use("/video",video);
 
 //routes---------------------------------------------------------------------------------------------------
 router.get("/", function (req, res) {
@@ -46,6 +48,8 @@ router.post("/:teamid", function (req, res) {
     const teamId = req.params.teamid;
     res.redirect("/user/overview/"+teamId);
 });
+
+
 
 //exports------------------------------------------------------------------------------------------------------
 module.exports = router;
