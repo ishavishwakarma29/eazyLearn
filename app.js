@@ -53,15 +53,7 @@ app.get("/",function(req,res){
   res.redirect("/login");
 });
 
-app.get("/xyz",function(req,res)
-{
-  res.render("test-create/qo.ejs",{path:"jdjkaj"});
-});
 
-app.post("/xyz",function(req,res)
-{
-  console.log(req.body);
-});
 
 
 //listen port -------------------------------------------------------------------------------------------------
