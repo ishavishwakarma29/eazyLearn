@@ -1,0 +1,25 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "chat portal for my project",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "socket.io": "^4.5.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishavishwakarma29/chatApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishavishwakarma29/chatApp/issues"
+  },
+  "homepage": "https://github.com/ishavishwakarma29/chatApp#readme"
+}
