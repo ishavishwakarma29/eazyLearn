@@ -125,6 +125,51 @@ function incby1(){
 document.getElementById("clear").addEventListener("click", deselect_radio);
 
 
+//onclick -- submit()
+document.getElementById("submit").addEventListener("click", save);
+
+
+function save(){
+    let optionselected = 0;
+    const testid = document.getElementById("testid").value;
+    let qno = document.getElementById("qno").value;
+    let selected_option = document.querySelector('input[name="answer"]:checked');
+    if (selected_option != null) {
+        optionselected = selected_option.value;
+    } 
+    
+
+    const user = document.getElementById("user").value ;
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'http://localhost:3000/api/testportalmain/saveonly', true);
+
+    xhr.setRequestHeader('Content-type', 'application/json');
+
+    xhr.onload = function () {
+        if (this.status = 200) {
+            console.log(this.responseText);
+            const output = JSON.parse(this.responseText);
+            console.log(output);
+            // document.getElementById("question").innerHTML=output.question;
+            // for(var i=0;i<4;i++)
+            // {
+            //     document.getElementById("option"+(i+1)).innerHTML= output.options[i];
+            // }
+        }
+    }
+
+    params = `{
+        "question_id":"${qno}",
+        "user":"${user}",
+        "selected_option":"${optionselected}",
+        "test_id":"${testid}"
+    }`;
+    xhr.send(params);
+}
+
+
 // function save_data() {
 //     let selected_option = document.querySelector('input[name="answer"]:checked');
 //     if (selected_option == null) {

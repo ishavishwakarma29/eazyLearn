@@ -38,7 +38,7 @@ router.get("/:testid",function(req,res){
                 Savedresponse.findOneAndUpdate({test_id:testId, user:user},{marks:getmarks},function(errupdate,update){
 
                 });
-                res.render("testportal/result.ejs",{total:no_of_question,tattempted:tattempted,correctanswer:correctanswer,incorrect:incorrectanswer,getmarks:getmarks,accuracy:accuracy});
+                res.render("testportal/result.ejs",{total:no_of_question,tattempted:tattempted,correctanswer:correctanswer,incorrect:incorrectanswer,getmarks:getmarks,accuracy:accuracy,testid:testId});
             });
             
         });
@@ -47,8 +47,9 @@ router.get("/:testid",function(req,res){
     
 });
 
-router.post("/",function(req,res){
-
+router.post("/:testid",function(req,res){
+    const testId = req.params.testid;
+    res.redirect("/testplatform/reviewtest/"+testId);
 });
 
 //exports------------------------------------------------------------------------------------------------------
