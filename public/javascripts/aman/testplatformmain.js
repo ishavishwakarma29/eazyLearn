@@ -169,38 +169,59 @@ function save(){
     xhr.send(params);
 }
 
+//onclick -- navigationButton()
 
-// function save_data() {
-//     let selected_option = document.querySelector('input[name="answer"]:checked');
-//     if (selected_option == null) {
-//         selected_option = 0;
-//     }
+const length = document.querySelectorAll(".navigationButton").length;
 
-//     const user = document.getElementById("user").value ;
-//     const qno = document.getElementById("qno").value;
+for(let i = 0 ;i < length ; i++)
+{
+    document.querySelectorAll(".navigationButton")[i].addEventListener("click",getButtonPressed);
+    document.querySelectorAll(".navigationButton")[i].addEventListener("click",deselect_radio);
+}
 
-//     const xhr = new XMLHttpRequest();
+function getButtonPressed(){
+    const goToQuestion = this.innerHTML;
+    console.log(goToQuestion);
 
-//     xhr.open('POST', 'http://localhost:3000/api/testportalmain', true);
 
-//     xhr.setRequestHeader('Content-type', 'application/json');
+    let optionselected = 0;
+    const testid = document.getElementById("testid").value;
+    let qno = document.getElementById("qno").value;
+    // let selected_option = document.querySelector('input[name="answer"]:checked');
+    // if (selected_option != null) {
+    //     optionselected = selected_option.value;
+    // } 
+    
 
-//     xhr.onload = function () {
-//         if (this.status = 200) {
-//             console.log(this.responseText);
-//             const output = JSON.parse(this.responseText);
-//             console.log(output);
-//             document.getElementById("question").innerHTML=output.question;
-//             for(var i=0;i<4;i++)
-//             {
-//                 document.getElementById("option"+(i+1)).innerHTML= output.options[i];
-//             }
-//         }
-//     }
+    const user = document.getElementById("user").value ;
 
-//     params = `{
-//         "question_id":"${qno}",
-//         "test_id":"${testid}"
-//     }`;
-//     xhr.send(params);
-// }
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'http://localhost:3000/api/testportalmain/gotoquestion', true);
+
+    xhr.setRequestHeader('Content-type', 'application/json');
+
+    xhr.onload = function () {
+        if (this.status = 200) {
+            console.log(this.responseText);
+            const output = JSON.parse(this.responseText);
+            console.log(output);
+            document.getElementById("question").innerHTML=output.question;
+            for(var i=0;i<4;i++)
+            {
+                document.getElementById("option"+(i+1)).innerHTML= output.options[i];
+            }
+            document.getElementById("qno").value = goToQuestion;
+            document.getElementById("qchange").innerHTML = goToQuestion;
+        }
+    }
+
+    params = `{
+        "question_id":"${qno}",
+        "gotoquestion":"${goToQuestion-1}",
+        "user":"${user}",
+        "selected_option":"${optionselected}",
+        "test_id":"${testid}"
+    }`;
+    xhr.send(params);
+}

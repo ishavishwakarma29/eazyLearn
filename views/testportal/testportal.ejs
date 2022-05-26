@@ -14,13 +14,12 @@
     <div class="content">
       <div class="infosection">
         <div class="leftinfo">
-          <div class="profile"><span class="initials">IA</span></div>
-          <span class="otherinfo">Name :<span class="bgwhite"> Isha Vishwakarma</span></span>
+          <div class="profile"><span class="initials"><%=user[0].toUpperCase()%><%=user[5].toUpperCase()%></span></div>
+          <span class="otherinfo">Name :<span class="bgwhite"><%=user%></span></span>
         </div>
-        <div class="language">English</div>
-        <span class="otherinfo1">Exam Name :<span class="bgwhite"> JEE Advanced</span></span>
-        <span class="otherinfo1">Subject Name :<span class="bgwhite"> Chemistry</span></span>
-        <span class="otherinfo1">Total Marks :<span class="bgwhite"> 300</span></span>
+        <span class="otherinfo1">Subject Name :<span class="bgwhite"><%=data.test_name%></span></span>
+        <!-- <span class="otherinfo1">Subject Name :<span class="bgwhite"> Chemistry</span></span> -->
+        <span class="otherinfo1">Total Marks :<span class="bgwhite"><%=data.total_marks%></span></span>
       </div>
 
       <div class="questionandoptions">
@@ -91,7 +90,9 @@
       </div>
       <div class="allques">
         <div class="box">
-
+          <% for(var itr = 1; itr<=nos ;itr ++) { %>
+            <button class="navigationButton"><%=itr%></button>
+            <%}%>
         </div>
       </div>
     </div>

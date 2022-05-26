@@ -228,13 +228,14 @@
     flex-wrap: wrap;
 }
 
-.allques .box a{
+.allques .box button{
     margin: 5px;
     padding: 20px;
     background-color: gray;
     text-decoration: none;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #countdown {

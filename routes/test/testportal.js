@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyparser = require("body-parser");
 const Testinfo = require("../../database/testinfo");
+const Testqo = require("../../database/qo");
 
 //middlewares ------------------------------------------------------------------------------------------
 let router = express.Router();
@@ -14,7 +15,10 @@ router.get("/:testid",function(req,res){
     const qno = 1;
     
     Testinfo.findOne({test_id:testId},function(err,data){
-        res.render("testportal/testportal.ejs",{testid : testId , qno : qno , user : user,time : data.time});
+        Testqo.findOne({test_id:testId},function(err,data_qo){
+            const no_of_question = data_qo.qo.length;
+            res.render("testportal/testportal.ejs",{testid : testId , qno : qno , user : user,time : data.time ,data:data , nos : no_of_question});
+        });
     });
 
     // setTimeout(testEnd, 3000);
