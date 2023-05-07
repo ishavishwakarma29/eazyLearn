@@ -16,6 +16,9 @@ Eazylearn is an online education platform that connects teachers and students. T
 - APIs
 - Socket.io
 
+## Demo Link
+<a href="https://youtu.be/o4yz8zHC_ik" target="_blank">https://youtu.be/o4yz8zHC_ik</a>
+
 ## Getting Started
 1. Clone the repository:
 ```bash
