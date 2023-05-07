@@ -40,7 +40,7 @@ npm start
 http://localhost:3000/
 ```
 
-## Contributors:
+## Contributors
 * [Sambhav Jain](https://github.com/samjain233)
 * [Isha Vishwakarma](https://github.com/ishavishwakarma29)
 * [Aman Singh](https://github.com/amansingh0811)
